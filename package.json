@@ -9,7 +9,8 @@
     "react-dom": "^16.5.2",
     "react-router-bootstrap": "^0.24.4",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.0.5",
+    "react-stripe-elements": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +19,6 @@
     "predeploy": "npm run build",
     "deploy": "aws s3 sync build/ s3://notes-app-client-diego --delete",
     "postdeploy": "aws cloudfront create-invalidation --distribution-id E17R7C97UITW8A --paths '/*'",
-
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
