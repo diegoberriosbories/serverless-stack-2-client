@@ -27,6 +27,7 @@ export default class Login extends Component {
   handleSubmit = async event => {
     event.preventDefault();
     this.setState({ isLoading: true });
+    console.log("email: ", this.state.email, "pwd ", this.state.password);
     try {
       await Auth.signIn(this.state.email, this.state.password);
       console.log("Logged in");
